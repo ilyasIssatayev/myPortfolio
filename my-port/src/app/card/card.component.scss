@@ -1,0 +1,120 @@
+.cardContainer {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  width: 70vw;
+  height: 70vh;
+  min-width: 1200px;
+  margin: 0 auto 5vh;
+  vertical-align: middle;
+
+  border: 20px solid white;
+  background: white;
+}
+.titleSide {
+  padding-left: 2%;
+  width: 5%;
+  height: 100%;
+}
+.titleSide {
+  padding-top: 25%;
+  padding-bottom: 25%;
+  width: 5%;
+  height: 100%;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.lineHolder {
+  margin-top: 5vh;
+  border: 1px solid rgb(153, 153, 153);
+  height: 60vh;
+  width: 0px;
+}
+.leftSideCard {
+  padding-top: 10%;
+  width: 100%;
+  height: 100%;
+}
+.sideText {
+  margin-left: 1rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  text-align: center;
+}
+
+.titleText {
+  color: #696969;
+  margin-left: 10%;
+  height: 30%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 70px;
+  line-height: 46px;
+}
+
+.topicText {
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 4vh;
+}
+
+.descrText {
+  margin-left: 10%;
+  margin-bottom: 5rem;
+  height: 30%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.parent {
+  overflow: auto;
+}
+
+.backgroundBox {
+  position: absolute;
+
+  z-index: 0;
+  background: rgb(223, 187, 69);
+  width: 40vw;
+  height: 20vh;
+}
+
+// .card {
+//   display: flex;
+//   flex-direction: row;
+//   font-family: 'Montserrat', sans-serif;
+//   width: 80vw;
+//   height: 80vh;
+
+//   // margin: 0 auto 5vh;
+//   // vertical-align: middle;
+
+//   border: 20px solid white;
+//   background: #e5e5e0;
+
+//   &__title {
+//     width: 120px;
+//     background: red;
+//     display: flex;
+//     justify-content: space-around;
+
+//     .text {
+//       width: 100%;
+//       font-size: 42px;
+//       transform: rotate(-90deg);
+//       text-align: center;
+//     }
+//   }
+
+//   &__content {
+//     width: 100%;
+//     background: green;
+//   }
+// }
