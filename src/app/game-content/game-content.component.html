@@ -1,0 +1,25 @@
+<div class="gameContent">
+  <div class="gameName">
+    <b>{{name}}</b>
+  </div>
+  <div class="description">
+    {{descr}}
+  </div>
+  <div class="img1">
+    <img src={{img1_src}} class="imageBasic" alt="" />
+  </div>
+  <div class="img2">
+    <img src={{img2_src}} class="imageBasic" alt="" />
+  </div>
+  <div class="img3">
+    <img src={{img3_src}} class="imageBasic" alt="" />
+  </div>
+  <div class="video">
+    <mat-video
+      src={{video_src}}
+      [preload]="true"
+      [fullscreen]="true"
+
+    ></mat-video>
+  </div>
+</div>
