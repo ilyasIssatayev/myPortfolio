@@ -1,17 +1,18 @@
-.cardContainer {
-  display: flex;
-  font-family: "Montserrat", sans-serif;
-  width: 80vw;
-  height: 70vh;
-  min-width: 1200px;
-  margin: 0 auto 5vh;
-  vertical-align: middle;
 
-  border: 20px solid white;
-  background: white;
-}
 //Desktop screen
 @media screen and (min-width: 1200px) {
+  .cardContainer {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    width: 80vw;
+    height: 70vh;
+    min-width: 1200px;
+    margin: 0 auto 5vh;
+    vertical-align: middle;
+
+    border: 20px solid white;
+    background: white;
+  }
   .titleSide {
     padding-top: 25%;
     padding-bottom: 25%;
@@ -37,6 +38,18 @@
 }
 //PHone screen
 @media screen and (max-width: 1200px) {
+  .cardContainer {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    width: 90vw;
+    height: 80vh;
+
+    margin: 0 auto 5vh;
+    vertical-align: middle;
+
+    border: 20px solid white;
+    background: white;
+  }
   .titleSide {
     width: 0%;
     height: 0%;
