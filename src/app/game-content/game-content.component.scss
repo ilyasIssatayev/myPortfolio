@@ -5,19 +5,19 @@
   display: grid;
   // grid-column-gap: 1%;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns:0px 1fr 1fr 1fr ;
   grid-column-gap: 3%;
   grid-template-areas:
-  "gameName video video"
-  "descr video video"
-  "descr video video"
-  "descr video video"
-  "img1 img2 img3 "
+  ". gameName video video"
+  ". descr video video"
+  ". descr video video"
+  ". descr video video"
+  ". img1 img2 img3 "
   ;
 }
 
 .video {
-  padding: 5px;
+  padding-bottom: 5px;
   grid-area: video;
   // grid-column-start: 3;
   // grid-column-end: 5;
