@@ -1,10 +1,11 @@
 <div class="skillContent">
   <div class="iconHolder iconUnity" (click)="onButtonCLick()">
-    <img
+    <!-- <img
       src="../../assets/pics/unity.png"
       alt="Skills"
       style="width: 10vh; height: 10vh;"
-    />
+    /> -->
+      <app-image-progress-bar src="../../assets/pics/unity.png" [progress]="90"></app-image-progress-bar>
   </div>
   <div class="textSkills titleUnity" style="">Unity3D</div>
   <div class="mainTextSkills textUnity">
@@ -13,11 +14,12 @@
     new tools, techniques, understanding of the C# and Unity engine itself.
   </div>
   <div class="iconHolder iconC" (click)="onButtonCLick()">
-    <img
+    <!-- <img
       src="../../assets/pics/c++.png"
       alt="Skills"
       style="width: 10vh; height: 10vh;"
-    />
+    /> -->
+    <app-image-progress-bar src="../../assets/pics/c++.png" [progress]="35"></app-image-progress-bar>
   </div>
   <div class="textSkills titleC" style="">C++ Engine</div>
   <div class="mainTextSkills textC">
@@ -25,11 +27,12 @@
     have basic knowledge of OpenGL, 2D physics engine and engine architecture.
   </div>
   <div class="iconHolder iconAngular" (click)="onButtonCLick()">
-    <img
+    <!-- <img
       src="../../assets/pics/angular.png"
       alt="Skills"
       style="width: 10vh; height: 10vh;"
-    />
+    /> -->
+    <app-image-progress-bar src="../../assets/pics/angular.png" [progress]="60"></app-image-progress-bar>
   </div>
   <div class="textSkills titleAngular" style="">Angular</div>
   <div class="mainTextSkills textAngular">
@@ -38,11 +41,13 @@
     typescript and web design.
   </div>
   <div class="iconHolder iconNode" (click)="onButtonCLick()">
-    <img
+    <!-- <img
       src="../../assets/pics/nodejs.png"
       alt="Skills"
       style="width: 10vh; height: 10vh;"
-    />
+    /> -->
+    <app-image-progress-bar src="../../assets/pics/nodejs.png" [progress]="50"></app-image-progress-bar>
+
   </div>
   <div class="textSkills titleNode" style="">NodeJs</div>
   <div class="mainTextSkills textNode">

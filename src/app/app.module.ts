@@ -17,6 +17,8 @@ import { IlyasContentComponent } from './ilyas-content/ilyas-content.component';
 import { InfoContentComponent } from './info-content/info-content.component';
 import {MatButtonModule} from '@angular/material/button';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { NgxImageProgressBarComponent } from './logo-progress-bar/ngx-image-progress-bar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,8 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     GameInfoScreenComponent,
     IlyasContentComponent,
     InfoContentComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    NgxImageProgressBarComponent
   ],
   imports: [
     BrowserModule,

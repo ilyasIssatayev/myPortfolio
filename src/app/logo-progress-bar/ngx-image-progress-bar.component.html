@@ -1,0 +1,20 @@
+<div
+  #container
+  class="ngx-image-progress-bar">
+  <div class="ngx-image-progress-bar__back">
+    <img
+      [class.blur]="backgroundBlur"
+      [src]="src"
+      [alt]="alt"
+      [style.width.px]="container.offsetWidth">
+  </div>
+  <div
+    class="ngx-image-progress-bar__progress-container"
+    [style.width.%]="progress">
+    <img
+      [class.intensity]="intensity"
+      [src]="src"
+      [alt]="alt"
+      [style.width.px]="container.offsetWidth">
+  </div>
+</div>
