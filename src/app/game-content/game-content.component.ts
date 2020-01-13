@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DomSanitizer, SafeUrl} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-game-content',
@@ -13,11 +14,15 @@ export class GameContentComponent implements OnInit {
   @Input() img2_src="Default topic"
   @Input() img3_src="Default topic"
   @Input() video_src="Default topic"
-  constructor() { }
+  constructor(private sanitizer:DomSanitizer) {    }
 
   ngOnInit() {
-    console.log("IMG1: ",this.img1_src);
+
   }
 
-
+  getlink(): SafeUrl {
+    const output=this.sanitizer.bypassSecurityTrustUrl(this.video_src);
+    console.log(output);
+    return output;
+}
 }

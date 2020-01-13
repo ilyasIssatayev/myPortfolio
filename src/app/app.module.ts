@@ -18,9 +18,10 @@ import { InfoContentComponent } from './info-content/info-content.component';
 import {MatButtonModule} from '@angular/material/button';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { NgxImageProgressBarComponent } from './logo-progress-bar/ngx-image-progress-bar.component';
-
+import { SafePipe } from './safe.pipe';
 @NgModule({
   declarations: [
+    SafePipe,
     AppComponent,
     TestScrollComponent,
     CardComponent,

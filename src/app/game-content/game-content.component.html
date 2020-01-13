@@ -1,25 +1,26 @@
 <div class="gameContent">
   <div class="gameName">
-    <b>{{name}}</b>
+    <b>{{ name }}</b>
   </div>
   <div class="description">
-    {{descr}}
+    {{ descr }}
   </div>
   <div class="img1">
-    <img src={{img1_src}} class="imageBasic" alt="" />
+    <img src="{{ img1_src }}" class="imageBasic" alt="" />
   </div>
   <div class="img2">
-    <img src={{img2_src}} class="imageBasic" alt="" />
+    <img src="{{ img2_src }}" class="imageBasic" alt="" />
   </div>
   <div class="img3">
-    <img src={{img3_src}} class="imageBasic" alt="" />
+    <img src="{{ img3_src }}" class="imageBasic" alt="" />
   </div>
   <div class="video">
-    <mat-video
-      src={{video_src}}
-      [preload]="true"
-      [fullscreen]="true"
-
-    ></mat-video>
+    <iframe
+      style="width: 100%; height: 100%;"
+      [src]="video_src | safe: 'resourceUrl'"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
   </div>
 </div>
