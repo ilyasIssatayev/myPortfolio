@@ -1,21 +1,87 @@
-.gameContent {
+//Desktop screen
+@media screen and (min-width: 1200px) {
+  .gameContent {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    // grid-column-gap: 1%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0px 1fr 1fr 1fr;
+    grid-column-gap: 3%;
+    grid-template-areas:
+      ". gameName video video"
+      ". descr video video"
+      ". descr video video"
+      ". descr video video"
+      ". img1 img2 img3 ";
+  }
 
-  width: 100%;
-  height: 100%;
-  display: grid;
-  // grid-column-gap: 1%;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns:0px 1fr 1fr 1fr ;
-  grid-column-gap: 3%;
-  grid-template-areas:
-  ". gameName video video"
-  ". descr video video"
-  ". descr video video"
-  ". descr video video"
-  ". img1 img2 img3 "
-  ;
+  .img2 {
+    grid-area: img2;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+
+  .description {
+    padding: 10px;
+    font-size: 2vh;
+    grid-area: descr;
+    justify-self: center;
+    align-self: center;
+  }
+  .gameName {
+    font-size: 3.5vh;
+    justify-self: center;
+    align-self: center;
+    grid-area: gameName;
+  }
 }
+//Phone screen
+@media screen and (max-width: 1200px) {
+  .gameContent {
 
+    width: 100%;
+    height: 100%;
+    display: grid;
+    // grid-column-gap: 1%;
+    grid-template-rows: 0.2fr 1fr 2fr 1fr 0px 0px;
+    grid-template-columns: 1fr;
+    grid-column-gap: 3%;
+    grid-template-areas:
+      "gameName"
+      "descr"
+      "video"
+      "img1 "
+      "img2"
+      "img3";
+  }
+
+  .img2 {
+    grid-area: img2;
+    width: 0px;
+    height: 0px;
+  }
+  .img3 {
+    grid-area: img3;
+    width: 0px;
+    height: 0px;
+  }
+
+  .description {
+    padding: 5px;
+    font-size: 1.5vh;
+    grid-area: descr;
+    justify-self: center;
+    align-self: center;
+  }
+  .gameName {
+    font-size: 2vh;
+    justify-self: center;
+    align-self: center;
+    grid-area: gameName;
+  }
+}
 .video {
   padding-bottom: 5px;
   grid-area: video;
@@ -25,28 +91,13 @@
   // grid-row-end: 3;
 }
 
-.img1{
+.img1 {
   grid-area: img1;
 }
-.img2{
-  grid-area: img2;
+
+.imageBasic {
+  width: 100%;
+  height: auto;
 }
-.img3{
-  grid-area: img3;
-}
-.imageBasic{
-  width:100%;
-  height: 100%;
-}
-.description{
-  padding: 10px;
-  grid-area: descr;
-  justify-self: center;
-  align-self: center;
-}
-.gameName{
-  font-size: 3.5vh;
-  justify-self: center;
-  align-self: center;
-  grid-area: gameName;
-}
+
+
