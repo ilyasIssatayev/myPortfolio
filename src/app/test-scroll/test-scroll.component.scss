@@ -4,14 +4,20 @@
 body {
   font-family: sans-serif;
 }
-.header{
+@media screen and (max-width: 1200px) {
+  .hideOnPhone {
+    display: none;
+  }
+}
+
+.header {
   position: fixed;
 
   z-index: 99;
 }
 
-.navButton{
-  margin-left:1%;
+.navButton {
+  margin-left: 1%;
 }
 .container {
   max-height: 100vh;
